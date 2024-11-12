@@ -101,4 +101,4 @@ for gene in genes:
     gene_info = fetch_gene_summary(gene)
     if gene_info:
         # Print the full summary text
-        print(gene, '\t', gene_info.get("Summary", "No summary available"))
+        print(gene, '\t', gene_info.get("Summary", "No summary available").split('[')[0])
