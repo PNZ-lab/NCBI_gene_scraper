@@ -4,16 +4,17 @@
 Simply edit the code so that genes_unformatted contains a series of genes with one gene per line.
 
 When executed, this text is formatted to a list containing the gene names, iteratively sent to NCBI, and prints out a summary per gene in a tsv-separated fashion.
-This output can be easily formatted to a table by pasting in excel and copying from there.
+This output can be easily formatted to a table by pasting in excel and copying from there. Takes approximately 2s per gene.
 
-Example input:
-genes_unformatted = '''
-TTC23
-ARHGAP11A-SCG5
-STXBP6
-'''
+### Example input:
 
-Example output:
+    genes_unformatted = '''
+    TTC23
+    ARHGAP11A-SCG5
+    STXBP6
+    '''
+
+### Example output:
 
 
 | Gene Name       | Description                                                                                                                                                                        |
