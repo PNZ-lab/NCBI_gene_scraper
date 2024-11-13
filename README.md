@@ -19,6 +19,6 @@ This output can be easily formatted to a table by pasting in excel and copying f
 
 | Gene Name       | Description                                                                                                                                                                        |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TTC23           | Predicted to be involved in positive regulation of smoothened signaling pathway. Predicted to be located in cilium. [provided by Alliance of Genome Resources, Nov 2024]          |
-| ARHGAP11A-SCG5  | This locus represents naturally occurring readthrough transcription between the neighboring ARHGAP11A (Rho GTPase activating protein 11A) and SCG5 (secretogranin V) genes on chromosome 15q13.3. The readthrough transcript encodes a fusion protein that shares sequence identity with both the ARHGAP11A and SCG5 gene products. [provided by RefSeq, Feb 2019] |
-| STXBP6          | Enables cadherin binding activity involved in cell-cell adhesion. Predicted to be involved in negative regulation of exocytosis. Located in adherens junction. [provided by Alliance of Genome Resources, Nov 2024] |
+| TTC23           | Predicted to be involved in positive regulation of smoothened signaling pathway. Predicted to be located in cilium.|
+| ARHGAP11A-SCG5  | This locus represents naturally occurring readthrough transcription between the neighboring ARHGAP11A (Rho GTPase activating protein 11A) and SCG5 (secretogranin V) genes on chromosome 15q13.3. The readthrough transcript encodes a fusion protein that shares sequence identity with both the ARHGAP11A and SCG5 gene products.|
+| STXBP6          | Enables cadherin binding activity involved in cell-cell adhesion. Predicted to be involved in negative regulation of exocytosis. Located in adherens junction. |
