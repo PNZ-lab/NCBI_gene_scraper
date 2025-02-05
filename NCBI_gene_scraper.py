@@ -2,67 +2,26 @@ Description='''
 This script will take as input several gene names. It then queries NCBI and returns a summary of gene function per gene.
 '''
 
+from KTC_functions import KTC_GetGeneSet
+
 #Email is used for the query in case NCBI needs to contact us
 email = 'kasperthorhauge.christensen@ugent.be'
 
 #Just dump genes here with one gene per line.
 #They will be formatted to a list as input in the line below
 genes_unformatted = '''
-LRSAM1
-EBF3
-OPRL1
-TTC23
-ARHGAP11A-SCG5
-STXBP6
-CENPJ
-TNFRSF19
-SPART
-ZNF721
-ZBTB7B
-SAXO2
-ARPP21
-CMSS1
-SUN1
-POLR3C
-ASAP2
-PRDM8
-CDC20B
-ST7
-CCDC82
-ATXN7L3
-EOLA2-DT
-LRRFIP2
-GARS1-DT
-NAMPT
-SS18
-RBBP7
-LINC02950
-TAF2
-PUF60
-nan
-CFAP157
-C9orf43
-PDE3B
-NCAM1
-nan
-CASC15
-TCN2
-CTSH
-ALS2CL
-SPEF1
-GRM4
-KANK1
-AKR1C2
-CNPY1
-LINC00662
-FKBP10
-ZNF566
-BAIAP2
-HISLA
+RP11-1105G2.3
+ZNF471
+CSNK1G1
 '''
 
-genes = [gene.strip() for gene in genes_unformatted.split('\n') if gene.strip() and gene.strip().lower() != 'nan']
+# genes_unformatted = KTC_GetGeneSet('PRC2_consistent')
 
+try:
+    genes = [gene.strip() for gene in genes_unformatted.split('\n') if gene.strip() and gene.strip().lower() != 'nan']
+except:
+    genes = [gene.strip() for gene in genes_unformatted if gene.strip() and gene.strip().lower() != 'nan']
+print(genes)
 
 from Bio import Entrez
 
